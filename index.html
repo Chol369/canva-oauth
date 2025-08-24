@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva OAuth Callback Handler</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            background: white;
+            padding: 2rem 3rem;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .info {
+            background: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Canva OAuth Callback Handler</h1>
+        <p>This site handles OAuth callbacks for the Canva MCP Server integration.</p>
+        
+        <div class="info">
+            <strong>📍 Callback URL:</strong><br>
+            <code>https://canva.naibana.com/callback</code>
+        </div>
+
+        <p>If you're seeing this page directly, you need to:</p>
+        <ol>
+            <li>Run <code>python auth_helper_v2.py</code> on your local machine</li>
+            <li>Follow the authentication flow</li>
+            <li>You'll be redirected here with your authorization code</li>
+        </ol>
+
+        <p style="margin-top: 2rem;">
+            <a href="/callback">Go to callback handler →</a>
+        </p>
+    </div>
+</body>
+</html>
